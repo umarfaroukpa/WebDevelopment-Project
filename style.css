@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden; 
+    display: flex; 
+}
+
+.form-right{
+    padding-top: 60px;
+    margin-inline-start: 100px;
+
+}
+
+img{
+    width: 70px;
+    
+}
+ .item select{
+    position: absolute;
+    right: 550px;
+    border: none;
+    margin-top: 6px;
+ }
+
+.item img{
+    width: 20px;
+    position: absolute;
+    right: 325px;
+    margin-top: 3px;
+}
+
+
+
+figure{
+    margin-right: 240px;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.text{
+    line-height: 25px;
+   margin-left: 100px;
+} 
+
+
+form {
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px  #669999; 
+    width: 500px;
+} 
+
+.icon {
+    position: absolute;
+    right: 315px;
+    margin-top: 4px;
+
+}
+
+
+input, select, textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input{
+    width: calc(100% - 10px);
+    padding: 6px;
+    
+}
+input[type="date"] {
+    padding: 4px 5px;
+ }
+
+ .item {
+    margin: 10px 0;
+}
+
+
+
+#option{
+    position: absolute;
+    right: 315px;
+    border: none;
+    margin-top: 6px; 
+}
+
+.colums div {
+    width: 48%;
+}
+
+.colums {
+    display:flex;
+    flex-direction: row; 
+    flex-wrap:wrap;
+}
+
+button{
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2EC4B6;
+    height: 48px;
+    text-align: center;
+    border: navajowhite;
+    margin-top: 30px;
+}
+
+span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color:  #2EC4B6;
+}
+
+footer{
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+body{
+   background-color: #F7FDFC;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+img{
+    width: 50px;
+    margin-left: 90px; 
+}
+
+.text{
+    font-size: 12px;
+    line-height: 15px;
+}
+.form-right{
+    margin-right: 50px;
+}
+
+form{
+    margin-top: -25px;
+    width: 250px;
+}
+
+.item img{
+    width: 20px;
+    position: absolute;
+    right: 110px;
+}
+
+.item select{
+    position: absolute;
+    right: 110px;
+    border: none;
+    margin-top: 6px;
+ }
+
+ #option{
+    position: absolute;
+    right: 110px;
+    border: none;
+    margin-top: 6px;
+}
+
+.icon {
+    position: absolute;
+    right: 140px;
+    margin-top: 4px;
+
+}
+
+.colums div {
+    width: 100%; 
+}
+
+}
