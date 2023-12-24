@@ -10,52 +10,50 @@
 body{
     overflow: hidden; 
     display: flex; 
-}
-
-.form-right{
-    padding-top: 60px;
-    margin-inline-start: 100px;
-
-}
-
-img{
-    width: 70px;
-    
-}
- .item select{
-    position: absolute;
-    right: 550px;
-    border: none;
-    margin-top: 6px;
- }
-
-.item img{
-    width: 20px;
-    position: absolute;
-    right: 325px;
-    margin-top: 3px;
-}
-
-
-
-figure{
-    margin-right: 240px;
+    justify-content: space-evenly;
 }
 
 
 .left{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-     
+   justify-content: center;
+   align-items: center;
+    
+}
+
+figure img{
+    width: 70px;
+}
+
+.left figure{
+    order: 1 2;
+    padding-right: 340px;
 }
 
 .text{
-    line-height: 25px;
-   margin-left: 100px;
-} 
+    line-height: 20px;
+}
+
+.form-right{
+    padding-top: 20px;
+}
+
+
+.item select{
+    position: relative;
+    left: 175px;
+    border: none;
+    top: -34px; 
+}
+
+.item img{
+    width: 20px;
+    position: relative;
+    left: 175px; 
+    top: -36px;
+}
+
 
 
 form {
@@ -67,10 +65,9 @@ form {
 } 
 
 .icon {
-    position: absolute;
-    right: 315px;
-    margin-top: 4px;
-
+    position: relative;
+    left: 413px;
+    top: -34px;
 }
 
 
@@ -89,17 +86,15 @@ input[type="date"] {
     padding: 4px 5px;
  }
 
- .item {
+ .item{
     margin: 10px 0;
 }
 
 
-
 #option{
-    position: absolute;
-    right: 315px;
+    position: relative;
+    left: 413px; 
     border: none;
-    margin-top: 6px; 
 }
 
 .colums div {
@@ -138,6 +133,7 @@ footer{
 }
 
 @media (max-width: 768px) {
+
 body{
    background-color: #F7FDFC;
    display: flex;
@@ -146,53 +142,51 @@ body{
    align-items: center;
 }
 
-img{
-    width: 50px;
-    margin-left: 90px; 
-}
-
-.text{
-    font-size: 12px;
-    line-height: 15px;
-}
-.form-right{
-    margin-right: 50px;
-}
-
 form{
-    margin-top: -25px;
     width: 250px;
+    margin-inline-end: 150px;
+    margin-top: 10px;
 }
 
-.item img{
-    width: 20px;
-    position: absolute;
-    right: 110px;
+.left{
+    padding-top: 30px;
 }
 
-.item select{
-    position: absolute;
-    right: 110px;
-    border: none;
-    margin-top: 6px;
- }
-
- #option{
-    position: absolute;
-    right: 110px;
-    border: none;
-    margin-top: 6px;
+figure img{
+   width: 70px;
 }
 
-.icon {
-    position: absolute;
-    right: 140px;
-    margin-top: 4px;
-
-}
 
 .colums div {
+    display: flex;
+    flex-direction: column;  
     width: 100%; 
 }
 
+.item select{
+    position: relative;
+    left: -20px;
+    border: none;
+    top: -34px; 
 }
+
+#option{
+    position: relative;
+    left: 162px; 
+    border: none;
+}
+
+.icon {
+    position: relative;
+    left: 162px;
+    top: -34px;
+}
+
+
+}
+
+@media  (max-width: 480){
+    .form-right{
+        margin-inline-end: 30px;
+    }
+ }
